@@ -29,7 +29,7 @@ function Write-GreetingMessage {
         [string]$Greeting = "Hello World"
     )
 
-    $message = "'$Greeting! Jeremy and Carl and Patricia'"
+    $message = "'$Greeting! Jeremy and Carl and Patricia and Meet'"
 
     if ($Name) {
         $message = "$Name says " + $message
