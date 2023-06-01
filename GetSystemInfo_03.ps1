@@ -57,4 +57,4 @@ $mailSubject = "System INformation Report"
 $mailBody = "The system information report is attached."
 
 # Send the report
-Send-MailMessage -SmtpServer $smtpServer -Port $smtpPort -Credential $smtpCreds -From $mailFrom -To $mailTo -Subject $mailSubject -Body $mailBody -Attachments $reportPath
+Send-MailMessage -SmtpServer $smtpServer -Port $smtpPort -Credential $smtpCreds -UseSsl -From $mailFrom -To $mailTo -Subject $mailSubject -Body $mailBody -Attachments $reportPath
