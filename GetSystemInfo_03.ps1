@@ -47,7 +47,7 @@ $result | Out-File $reportPath
 $smtpServer = "smtp.office365.com"
 $smtpPort = 587
 $smtpUser = "wang0885@algonquinlive.com"
-$smtpPass = ConvertTo-SecureString "YZsuccess1013-" -AsPlainText -Force # create a SecureString object in PowerShell from a plain text password. The SecureString object encrypts the data so it can be safely stored and manipulated in memory.
+$smtpPass = ConvertTo-SecureString "your pwd" -AsPlainText -Force # create a SecureString object in PowerShell from a plain text password. The SecureString object encrypts the data so it can be safely stored and manipulated in memory.
 $smtpCreds = New-Object System.Management.Automation.PSCredential($smtpUser, $smtpPass) # create a new PSCredential object '$smtpCreds', which is a type of object in PowerShell that can store a username and a password. This object can be used later whenever a username and a password are needed.
 
 # Email settings
